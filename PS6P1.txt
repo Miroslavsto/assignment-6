@@ -1,0 +1,17 @@
+
+quantity = int(input("Enter the quantity of widgets: "))
+
+if quantity > 10000:
+    price_per_widget = 10
+elif 5000 <= quantity <= 10000:
+    price_per_widget = 20
+else:
+    price_per_widget = 30
+
+extended_price = quantity * price_per_widget
+
+tax_amount = extended_price * 0.07
+
+total_cost = extended_price + tax_amount
+
+print("\nExtended Price: ${:.2f}".format(exte
